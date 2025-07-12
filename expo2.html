@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Technical Event Registration</title>
+  <style>
+    body {
+      background: url(" body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxFl_DChN0w9sGyBl6gJdFJou1lnWZMlU01r0YJ3FnwkOGLxklPNqP6_umEUfUJXwGIcE&usqp=CAU");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #ffffff;
+    }") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      background: rgba(0, 0, 0, 0.75);
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      font-size: 15px;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 20px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      background-color: #00b894;
+      color: white;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #019875;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Technical Event Registration</h2>
+    <form>
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="roll">Roll Number:</label>
+      <input type="text" id="roll" name="roll" required>
+
+      <label for="branch">Branch:</label>
+      <input type="text" id="branch" name="branch" required>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <button type="submit">Register</button>
+
+    </form>
+  </div>
+
+</body>
+</html>

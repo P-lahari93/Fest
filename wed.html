@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Telugu Matrimony</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://cdn.pixabay.com/photo/2017/09/03/17/49/indian-wedding-2717061_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); /* overlay */
+      z-index: 0;
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 35px 30px;
+      border-radius: 20px;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .form-container h2 {
+      margin-bottom: 25px;
+      color: #e91e63;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    .form-container button {
+      background-color: #e91e63;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+      font-size: 16px;
+    }
+
+    .form-container button:hover {
+      background-color: #c2185b;
+    }
+
+    .image-switcher {
+      margin-top: 15px;
+    }
+
+    .image-switcher button {
+      margin: 5px;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ddd;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    .image-switcher button:hover {
+      background-color: #bbb;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 500px) {
+      .form-container {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>🌸 Telugu Matrimony</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <input type="text" placeholder="Caste / Community" required />
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="image-switcher">
+      <p style="margin-top: 15px; font-size: 14px; color: #555;">Change Background:</p>
+      <button onclick="changeBG(1)">💍 Wedding Hall</button>
+      <button onclick="changeBG(2)">🌅 Sunset Couple</button>
+      <button onclick="changeBG(3)">🌸 Floral</button>
+    </div>
+  </div>
+
+  <script>
+    function changeBG(option) {
+      let bg = '';
+      switch(option) {
+        case 1:
+          bg = 'https://cdn.pixabay.com/photo/2017/09/03/17/49/indian-wedding-2717061_1280.jpg';
+          break;
+        case 2:
+          bg = 'https://cdn.pixabay.com/photo/2016/10/27/23/51/sunset-1777352_1280.jpg';
+          break;
+        case 3:
+          bg = 'https://cdn.pixabay.com/photo/2020/05/20/03/32/wedding-5196079_1280.jpg';
+          break;
+      }
+      document.body.style.background = `url('${bg}') no-repeat center center fixed`;
+      document.body.style.backgroundSize = 'cover';
+    }
+  </script>
+</body>
+</html>
